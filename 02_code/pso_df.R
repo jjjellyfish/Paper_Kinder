@@ -81,7 +81,6 @@ names(tmp) <- str_replace(names(tmp), "month_", "month_fabel_")
 dat <- left_join(dat, tmp, by=c('episode_code' = 'Code'))
 
 
-
 #### save ####
 pso <- dat
 save(pso, file='01_data/pso.rda')
